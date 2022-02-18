@@ -8,14 +8,26 @@
 </head>
 <body>
     <h1>Formulario de ingreso de animal</h1>
-    <p>
-        En este formulario se van a inscribir los animales a ingresar al sistema para que posteriormente algún usuario pueda adoptarlos.
-    </p>
-    <p>Seleccione el tipo de animal:</p>
+    <p>En este formulario se van a inscribir los animales a ingresar al sistema para que posteriormente algún usuario pueda adoptarlos</p>
+
+    <form action="codigo.php" method="post"> <!-- codigo.php es un destino incierto aun-->
+        <h2>Datos de la mascota:</h2>
+        <p>Seleccione el tipo de animal:</p>
         <label> perro <input type="radio" name="tipoDeAnimal" value="perro"></label>
         <label> gato <input type="radio" name="tipoDeAnimal" value="gato"></label>
 
-    <a href="formulario.html">Ir al formulario</a>
+        <h2>Datos del dueño actual:</h2>
+        <label> Nombre <input type="text" placeholder="Nombre y Apellido"> </label> <br>
+        <label> E-mail <input type="email" placeholder="info@dominio.com"> </label> <br>
+        
+        <h4>Comentarios:</h4>
+        <textarea></textarea>
+        <br>
+        <input type="button" value="Enviar">
+    </form>
+    
+
+    <a href="index.html">Volver a Inicio</a>
 
 </body>
 </html>
