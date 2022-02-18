@@ -5,10 +5,21 @@
 }
 
 
-h1{ color:blue ; }
+/* h1{ color:blue ; } */
 
 .main{
     width: 90%;
     margin: 0 auto;
     padding-top: 5em;
+}
+.portada-Main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.img-main{
+    margin: 0 auto;
+    width: 600px;
 }
