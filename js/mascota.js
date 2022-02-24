@@ -8,6 +8,7 @@ class Mascotas {
     }
 }
 
+// base de datos 
 let mascotasDb = [
     {
         tipo: "perro",
@@ -17,6 +18,7 @@ let mascotasDb = [
         img: "https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/6124cf315cafe8c3101f8bab/perro-slide_0.jpg"
 }]
 
+//  funcion para agregar mascotas a la base de datos
 const addMascotatoDb = (mascota) => {
     mascotasDb.push(mascota)
 }
