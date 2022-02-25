@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* h1{ color:blue ; } */
+
+.main{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 5em;
+}
+.portada-Main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.img-main{
+    margin: 0 auto;
+    width: 600px;
+}
+/* PIZARRA MASCOTAS */
+#mascotaContainer img{
+    width: 100%;
+    height: 200px;
+}
