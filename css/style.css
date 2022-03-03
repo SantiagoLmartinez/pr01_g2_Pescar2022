@@ -3,9 +3,9 @@
     margin: 0;
     padding: 0;
 }
-
-
-/* h1{ color:blue ; } */
+body{
+    /* background: #ffec19; */
+}
 
 .main{
     width: 90%;
