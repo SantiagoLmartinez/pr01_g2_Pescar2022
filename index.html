@@ -41,6 +41,7 @@
     </header>
     <!-- main -->
     <main class="main ">
+        <!-- img mirada -->
         <img src="img/match.jpg" alt="Perritos"  class="imgMirada">
 
         <!-- <h1>Adopcion de animalitos</h1> -->
@@ -69,56 +70,41 @@
         </section>
     </main>
 
-    <!-- TEMPLATE -->
-    <template id="templatePizarraAdopciones">
-                <div class="col-3">
-                    <div class="card" style="width: 18rem;">
-                        <img src="" class="card-img-top" alt="img-mascota">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <button href="#" class="btn btn-primary w-100">Adoptar</button>
-                        </div>
-                    </div>
-                </div>
-    </template>
 
+<hr class="container">
 <!-- carrousel boostrap -->
-    <h2 > Organizaciones encargadas del rescate de animales en Argentina</h2>
+<section class="container">
+    <h2> Organizaciones encargadas del rescate de animales en Argentina</h2>
 
-<div id="carouselExampleIndicators" class="carousel slide w-50 mx-auto " data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner ">
-      <div class="carousel-item active ">
-      <a href="https://www.elcampitorefugio.org"><img src="img/campito.jpg" class="carru-img " alt="..."></a>  
+    <div id="carouselExampleIndicators" class="carousel slide w-50 mx-auto " data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner ">
+          <div class="carousel-item active ">
+          <a href="https://www.elcampitorefugio.org" target="_blank"><img src="img/campito.jpg" class="carru-img " alt="..."></a>  
+          </div>
+          <div class="carousel-item">
+            <a href="https://www.proyecto4patas.org/requisitos-adopcion/" target="_blank"><img src="img/4Patas.jpg" class="carru-img " alt="..."></a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://www.fundaciondegatitos.org.ar" target="_blank"><img src="img/fundacionGatitos.png" class="carru-img " alt="..."></a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div class="carousel-item">
-        <a href="https://www.proyecto4patas.org/requisitos-adopcion/"><img src="img/4Patas.jpg" class="carru-img " alt="..."></a>
-      </div>
-      <div class="carousel-item">
-        <a href="https://www.fundaciondegatitos.org.ar"><img src="img/fundacionGatitos.png" class="carru-img " alt="..."></a>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+    
+</section>
 
-
-    <!--imagen para distintos tamaños -->
-    <picture>
-        <img src="" alt="">
-
-    </picture>
 <!-- FOOTER -->
 <footer class="container">
     <!-- footer bootstrap -->
@@ -146,6 +132,19 @@
      </div>
     </div>
 </footer>
+    <!-- TEMPLATE -->
+    <template id="templatePizarraAdopciones">
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <img src="" class="card-img-top" alt="img-mascota">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button href="#" class="btn btn-primary w-100">Adoptar</button>
+                </div>
+            </div>
+        </div>
+</template>
     <!-- js bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- scripts -->
