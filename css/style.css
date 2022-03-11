@@ -23,6 +23,14 @@ body{
     margin: 0 auto;
     width: 600px;
 }
+.imgMirada {
+    margin: 0 auto;
+    /* margin:10px auto; */
+    display:block;
+    width: 80%;
+    
+}
+
 /* PIZARRA MASCOTAS */
 #mascotaContainer img{
     width: 100%;
@@ -45,11 +53,14 @@ body{
     text-decoration: none;
 }
 
-.imgMirada {
-    margin:10px auto;
-    display:block;
-    width: 100%;
-    
-    
-   
+/* media query */
+
+@media (max-width: 800px) { 
+    .imgMirada {
+        /* margin: 0 auto; */
+        /* margin:10px auto; */
+        /* display:block; */
+        width: 100%;
+        
+    }
 }
