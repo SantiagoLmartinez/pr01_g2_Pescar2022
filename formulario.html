@@ -43,27 +43,26 @@
     <h1>¿Querés dar en adopción?</h1>
     <h2>Completá el siguiente formulario:</h2>
 <!-- trabajar clases del formulario -->
-    <form action="codigo.php" method="post" > <!-- codigo.php es un destino incierto aun-->
+    <form id="alta">
         <h3>Datos del animal:</h3>
-        <label> Nombre del animal: <input type="text" required placeholder=""> </label> <br>
+        <label> Nombre del animal: <input type="text" id="nombreMascota" required placeholder=""> </label> <br>
         <label>Tipo de animal:
-            <select required>
-            <option>Seleccionar</option>
+            <select id="categoria" required>
             <option>Conejo</option>
             <option>Gato</option>
             <option>Hamster</option>
             <option>Perro</option> </select>
         </label> <br>
-        <label> Edad aproximada (si es que la sabes): <input type="text" placeholder=""> </label> <br>
+        <label> Edad aproximada (si es que la sabes): <input type="text" id="edad" placeholder=""> </label> <br>
         <label> Sexo:
-            <select required>
+            <select id="sexo" required>
             <option>Seleccionar</option>
             <option>Macho</option>
             <option>Hembra</option>
             </select>
         </label> <br>
         <label> ¿Está castrado?
-            <select required>
+            <select id="castrado" required>
             <option>Seleccionar</option>
             <option>Si</option>
             <option>No</option>
@@ -71,7 +70,7 @@
             </select>
         </label> <br>
         <label> ¿Tiene alguna condicion medica que requiera medicacion o cuidados especiales?
-            <select required>
+            <select id="condicion" required>
             <option>Seleccionar</option>
             <option>Si</option>
             <option>No</option>
@@ -79,19 +78,19 @@
             </select>
         </label> <br>
         <p>Si tu respuesta fue si, por favor dejanos una breve descripcion:</p>
-        <textarea placeholder=""></textarea><br>
+        <textarea placeholder="" id="descripcion"></textarea><br>
         <label>Foto:</label>
-        <input type="file" required>
+        <input type="file" id="imagen" required>
         <h4>Ya falta poco!</h4>
         <h2>Por ultimo, dejanos tus datos para que te podamos contactar:</h2>
-        <label> Nombre: <input type="text" required placeholder="Nombre y apellido"> </label> <br>
-        <label> E-mail: <input type="email" required placeholder="tumail@dominio.com"> </label> <br>
-        <label> Telefono / WhatsApp: <input type="text" required placeholder=""> </label> <br>
-        <label> Localidad / Barrio <input type="text" required placeholder=""> </label> <br>
+        <label> Nombre: <input type="text" id="nombre" required placeholder="Nombre y apellido"> </label> <br>
+        <label> E-mail: <input type="email" id="correo" required placeholder="tumail@dominio.com"> </label> <br>
+        <label> Telefono / WhatsApp: <input type="text" id="telefono" required placeholder=""> </label> <br>
+        <label> Localidad / Barrio <input type="text" id="direccion" required placeholder=""> </label> <br>
         <h4>Comentarios:</h4>
-        <textarea placeholder="Aca podes dejarnos comentarios!"></textarea>
+        <textarea id="comentario" placeholder="Aca podes dejarnos comentarios!"></textarea>
         <br>
-        <input type="button" value="Enviar">
+        <input type="submit" id="guardar">
     </form>
     
 
@@ -99,4 +98,6 @@
 
 </main>
 </body>
+
+<script src="js/data.js" type="module"></script>
 </html>
