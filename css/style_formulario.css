@@ -27,16 +27,36 @@ main{
     height: 100%;
     background-image: url(../img/formularioFondo2.jpg);
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 form{
+    padding: 20px;
     align-items: center;
     width: 50%;
-    height: 700px;
+    height: 900px;
     background-color: rgba(255,195,00, 0.8);
     margin: auto;
+}
+
+form h4{
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 main h1, form h3{
     font-weight: 600;
     font-size: 35px;
+}
+
+form h5{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+form h3, form h5{
+    margin-bottom: 10px;
 }
