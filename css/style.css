@@ -64,3 +64,12 @@ body{
         
     }
 }
+
+/* listado consejos de adopcion*/
+.listado {
+  background-color: rgba(211, 211, 211, 0.637);
+  margin: 20px 150px 150px 150px;
+  width: 75%;
+  padding: 40px;
+
+}
