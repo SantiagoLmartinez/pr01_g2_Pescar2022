@@ -7,6 +7,11 @@ body{
     /* background: #ffec19; */
 }
 
+body {
+    background-image: url("C:/Users/Pescar/Desktop/pr01_g2_Pescar2022/img/fondo.gif");
+    background-repeat: repeat;
+}
+
 .main{
     width: 100%;
     margin: 0 auto; 
@@ -73,3 +78,4 @@ body{
   padding: 40px;
 
 }
+
