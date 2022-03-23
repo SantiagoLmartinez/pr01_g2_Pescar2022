@@ -35,7 +35,7 @@
             </li>
 
              
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="#">Contacto</a></li>
         </ul>
     </header>
 <main class="main">
@@ -43,17 +43,24 @@
     <h1>¿Querés dar en adopción?</h1>
     <h2>Completá el siguiente formulario:</h2>
 <!-- trabajar clases del formulario -->
-    <form id="alta">
+    <form action="formulario.php" method="GET">
         <h3>Datos del animal:</h3>
-        <label> Nombre del animal: <input type="text" id="nombreMascota" required placeholder=""> </label> <br>
+        <label>Nombre: </label>
+        <input type="text" name="nombre"><br>
+        <label>Tipo de animal:</label>
+        <input type="text" name="tipo_animal"><br>
+        <label>Edad:</label>
+        <input type="text" name="edad"><br>
+        <!--
+        <label> Nombre del animal: <input type="text" name="nombre" required placeholder=""> </label> <br>
         <label>Tipo de animal:
             <select id="categoria" required>
             <option>Conejo</option>
             <option>Gato</option>
             <option>Hamster</option>
             <option>Perro</option> </select>
-        </label> <br>
-        <label> Edad aproximada (si es que la sabés): <input type="text" id="edad" placeholder=""> </label> <br>
+        </label> <br> 
+        <label> Edad aproximada (si es que la sabés): <input type="text" name="edad" placeholder=""> </label> <br>
         <label> Sexo:
             <select id="sexo" required>
             <option>Seleccionar</option>
@@ -78,7 +85,7 @@
             </select>
         </label> <br>
         <p>Si tu respuesta fue sí, por favor dejanos una breve descripción:</p>
-        <textarea class="textarea" id="descripcion" placeholder=""></textarea><br>
+        <textarea class="textarea" placeholder=""></textarea><br>
         <label>Foto:</label>
         <input type="file" id="imagen" required>
         <h4>¡Ya falta poco!</h4>
@@ -88,8 +95,8 @@
         <label> Teléfono / WhatsApp: <input type="text" id="telefono" required placeholder=""> </label> <br>
         <label> Localidad / Barrio <input type="text" id="direccion" required placeholder=""> </label> <br>
         <h6>Comentarios:</h6>
-        <textarea class="textarea" id="comentario" placeholder="Acá podés dejarnos comentarios..."></textarea>
-        <br>
+        <textarea class="textarea" placeholder="Acá podés dejarnos comentarios..."></textarea>
+        <br>-->
         <input type="submit" id="button_enviar">
     </form>
     
