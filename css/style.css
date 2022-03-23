@@ -7,8 +7,9 @@ body{
     /* background: #ffec19; */
 }
 
+/*fondo de perritos*/
 body {
-    background-image: url("C:/Users/Pescar/Desktop/pr01_g2_Pescar2022/img/fondo.gif");
+    background-image: url("../img/fondo.gif");
     background-repeat: repeat;
 }
 
