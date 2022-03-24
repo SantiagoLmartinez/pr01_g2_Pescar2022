@@ -47,7 +47,7 @@
         <h1>¿Querés dar en adopción?</h1>
         <h2>Completá el siguiente formulario:</h2>
     <!-- trabajar clases del formulario -->
-        <form action="formulario.php" method="GET">
+        <form action="../huellitas/php/formulario.php" method="POST" enctype="multipart/form-data">
             <h3>Datos del animal:</h3>
             <label>Nombre: </label>
             <input type="text" name="nombre"><br>
@@ -55,6 +55,8 @@
             <input type="text" name="tipo_animal"><br>
             <label>Edad:</label>
             <input type="text" name="edad"><br>
+            <label>Foto de la mascota:</label>
+            <input type="file" name="imagen"><br>
             <!--
             <label> Nombre del animal: <input type="text" name="nombre" required placeholder=""> </label> <br>
             <label>Tipo de animal:
