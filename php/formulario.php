@@ -28,7 +28,15 @@ $conn=new conexion();
 $queryUPDATE="INSERT INTO `mascotas` (`nombre`,`tipo`,`edad`, `imagen`) VALUES ('$nombre', '$tipo_animal', '$edad', '$imagen');";
 
 //primer parametro la conexion, el segundo la consulta
-$update= mysqli_query($conn->conectardb(),$queryUPDATE);
+$result=$update= mysqli_query($conn->conectardb(),$queryUPDATE);
 
+if($result)
+{
+    echo "La mascota se cargó con exito";
+}
+else
+{
+    echo "Error al cargar a la mascota";
+}
 
 ?>
