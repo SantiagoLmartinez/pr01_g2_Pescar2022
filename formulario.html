@@ -56,11 +56,16 @@
             <input type="text" required name="tipo_animal">
             </select>
             <label>Edad aproximada:</label>
-            <input type="number" required name="edad"><br>
+            <input type="number" required name="edad">
+            <select type="text" required name="">
+                <option selected value="D">dias</option>   <!-- 'selected' hace que al cargar el formulario ya este elegida esta opcion-->
+                <option value="M">meses</option>
+                <option value="A">años</option>
+            </select><br>
             <label>Sexo:</label>
             <select type="text" required name="sexo">
                 <option selected value="M">macho</option>   <!-- 'selected' hace que al cargar el formulario ya este elegida esta opcion-->
-                <option value="H">Hembra</option>
+                <option value="H">hembra</option>
             </select>
             <label>¿Está castrado?:</label>
             <select type="text" required name="es_castrado">
