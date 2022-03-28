@@ -1,21 +1,21 @@
 // header
-const _menu = document.getElementById('menu')
-const _btnMenu = document.getElementById('btnMenu')
+// const _menu = document.getElementById('menu')
+// const _btnMenu = document.getElementById('btnMenu')
 
-_btnMenu.addEventListener('click', (e)=>{
-    console.log('diste click en el btn menu')
-    _menu.classList.toggle('mostrar')
-})
+// _btnMenu.addEventListener('click', (e)=>{
+//     console.log('diste click en el btn menu')
+//     _menu.classList.toggle('mostrar')
+// })
 
-const _subMenu__btn = document.querySelectorAll('.subMenu__btn')
-for(let i = 0 ; i < _subMenu__btn.length; i++){
-    _subMenu__btn[i].addEventListener('click', (e) =>{
-        if(window.innerWidth < 1024){
-            const _subMenu = document.querySelector('.submenu')
-            _subMenu.classList.toggle('mostrarSubMenu')
-        }
-    })
-}
+// const _subMenu__btn = document.querySelectorAll('.subMenu__btn')
+// for(let i = 0 ; i < _subMenu__btn.length; i++){
+//     _subMenu__btn[i].addEventListener('click', (e) =>{
+//         if(window.innerWidth < 1024){
+//             const _subMenu = document.querySelector('.submenu')
+//             _subMenu.classList.toggle('mostrarSubMenu')
+//         }
+//     })
+// }
 
 
 //funciones 
