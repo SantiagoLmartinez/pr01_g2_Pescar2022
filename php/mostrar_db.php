@@ -16,7 +16,7 @@
 
         //Creo una variable $row (fila) en la cual vamos a guardar la fila que nos da como resultado la consulta SELECT
         while($row = mysqli_fetch_array($result)){
-            echo $row['nombre'];
+            echo $row['nombre']; 
             echo "<br>";
             echo $row['tipo'];
             echo "<br>";
