@@ -7,16 +7,25 @@
     <title>huellitas database</title>
 </head>
 <body>
-    <table>
-        
-    </table>
+    
+    <?php
+        require_once('conexion.php');
+        $conn=new conexion();
+        $querySELECT="SELECT`nombre`, `tipo`, `edad`, `imagen` FROM `mascotas` LIMIT 0,10";
+        $result= mysqli_query($conn->conectardb(),$querySELECT);
+
+        //Creo una variable $row (fila) en la cual vamos a guardar la fila que nos da como resultado la consulta SELECT
+        while($row = mysqli_fetch_array($result)){
+            echo $row['nombre'];
+            echo "<br>";
+            echo $row['tipo'];
+            echo "<br>";
+            echo $row['edad'];
+            echo "<br><br>";?>
+            <img heigh="70px" src="data:image/jpg;base64,<?php echo base64_encode($row['imagen']); ?>"/><?php
+            echo "<br><br>";
+        }
+    ?>
+
 </body>
 </html>
-
-<?php
-
-//Con esta instruccion hago que vuelva a cargar la pagina formulario.html una vez que
-header('Location: https://huellitas-grupo2.000webhostapp.com/huellitas/formulario.html');
-require_once('conexion.php');
-
-?>
