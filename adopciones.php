@@ -14,6 +14,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="css/header2.css"> -->
     <link rel="stylesheet" type="text/css" href="css/header-nav.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_adopciones.css">
     <!-- footer -->
     <link rel="stylesheet" href="css/footer.css">
 </head>
@@ -58,25 +59,48 @@
         </div>
     </nav>
 </header>
-
-    <?php
-        require_once("php/conexion.php");
-        $conn=new conexion();
-        $querySELECT="SELECT`nombre`, `tipo`, `edad`, `imagen` FROM `mascotas` LIMIT 0,10";
-        $result= mysqli_query($conn->conectardb(),$querySELECT);
-
-        //Creo una variable $row (fila) en la cual vamos a guardar la fila que nos da como resultado la consulta SELECT
-        while($row = mysqli_fetch_array($result)){
-            echo $row['nombre'];
-            echo "<br>";
-            echo $row['tipo'];
-            echo "<br>";
-            echo $row['edad'];
-            echo "<br><br>";?>
-            <img heigh="70px" src="data:image/jpg;base64,<?php echo base64_encode($row['imagen']); ?>"/><?php
-            echo "<br><br>";
-        }
-    ?>
+    <div class="item">
+        <?php
+            require_once("php/conexion.php");
+            $conn=new conexion();
+            $querySELECT="SELECT * FROM `mascotas`";
+            $result= mysqli_query($conn->conectardb(),$querySELECT);
+            ?>
+            
+                <h2>Mascotas que esperan por vos</h2>
+                <?php
+                    while($row = mysqli_fetch_array($result)){
+                ?>
+                <table>
+                <tr>
+                    <td rowspan="5" style="width: 200px;" ><img class="imagen" height="50px" src="data:image/jpg;base64,<?php echo base64_encode($row['imagen']); ?>"/></td>
+                    <td><strong>Nombre:</strong> <?php echo $row['nombre']; ?> </td>
+                    <td><strong>Tipo:</strong> <?php  echo $row['tipo']; ?> </td>
+                    <td><strong>Edad:</strong> <?php  echo $row['edad']; ?> </td>
+                    <td rowspan="5"><a id=button_adoptar href="mailto:<?php  echo $row['mail']; ?>">Quiero Adoptar</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Sexo:</strong> <?php echo $row['sexo']; ?> </td>
+                    <td><strong>Castrado:</strong> <?php echo $row['castrado']; ?> </td>
+                    <td><strong>¿Tiene antecedentes médicos?:</strong> <?php echo $row['condicion_medica']; ?> </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><strong>Antecedentes medicos:</strong> <?php echo $row['cond_medica_descripcion']; ?> </td>
+                </tr>
+                <tr>
+                    <td><strong>Dueño:</strong> <?php echo $row['dueño_nombre']; ?> </td>
+                    <td colspan="2"><strong>Localidad:</strong> <?php echo $row['localidad']; ?> </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><strong>Comentarios:</strong> <?php echo $row['comentarios']; ?> </td>
+                </tr>
+                </table>
+                <?php
+                    }
+                ?>
+            
+    </div>
+    
 
 <a href="index.html" id="button_volver">Volver al Inicio</a>
 <footer class="footer" id="ContactoFooter">
