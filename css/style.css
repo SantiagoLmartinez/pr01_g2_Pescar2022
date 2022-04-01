@@ -3,9 +3,7 @@
     margin: 0;
     padding: 0;
 }
-body{
-    /* background: #ffec19; */
-}
+
 
 /*fondo de perritos*/
 body {
@@ -27,6 +25,8 @@ body {
     align-items: center; */
 
 }
+
+
 
 .img-main{
     margin: 0 auto;
@@ -79,6 +79,7 @@ body {
   margin: 20px 150px 150px 150px;
   width: 75%;
   padding: 40px;
+  text-align: justify;
 
 }
 
