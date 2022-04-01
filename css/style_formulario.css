@@ -5,12 +5,10 @@ body, body main h2{
     color: #333;
     font-weight: 400;
     font-size: 15px;
-   
 }
 
 header{
     background-color: white;
-    
 }
 
 body main h1{
@@ -32,15 +30,16 @@ main{
     background-position: center;
 }
 */
-form{
+
+form {
     padding: 20px;
+    padding-top: 50px;
     padding-bottom: 50px;
     align-items: center;
     width: 50%;
-    height: 1200px;
+    height: 1400px;
     background-color: rgba(255, 196, 0, 0.959);
     margin: auto;
-    
 }
 
 form h4{
