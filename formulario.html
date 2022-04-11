@@ -89,8 +89,10 @@
     </nav>
 </header>
 
-    <main class="main">
-        <section class="portada-form mx-auto">
+    <main class="main row justify-content-center container mx-auto">
+        <div class="col-12 col-xg-6 container">
+            
+        <section class="portada-form  mx-auto">
             <h1>¿Querés dar en adopción?</h1>
             <br>
             <h2>Completá el siguiente formulario:</h2>
@@ -98,54 +100,55 @@
         </section>
         <form action="php/formulario.php" method="POST" enctype="multipart/form-data">
 
-            <h3>Datos del animal:</h3>
+            <h3 class="text-center">Datos del animal :</h3>
             <label>Nombre del animal: </label>
-            <input type="text" required name="nombre"><br>
+            <input type="text" class="form-control" required name="nombre"><br>
             <label>Tipo de animal:</label>
-            <input type="text" required name="tipo_animal">
+            <input type="text" class="form-control" required name="tipo_animal">
             </select>
             <label>Edad aproximada:</label>
-            <input type="number" required name="edad">
-            <select type="text" required name="">
+            <input type="number" class="form-control mb-2" required name="edad">
+            <select type="text" class="form-select" required name="">
                 <option selected value="D">Días</option>   <!-- 'selected' hace que al cargar el formulario ya este elegida esta opcion-->
                 <option value="M">Meses</option>
                 <option value="A">Años</option>
             </select><br>
             <label>Sexo:</label>
-            <select type="text" required name="sexo">
+            <select type="text" class="form-select" required name="sexo">
                 <option selected value="M">Macho</option>   <!-- 'selected' hace que al cargar el formulario ya este elegida esta opcion-->
                 <option value="H">Hembra</option>
             </select>
             <label>¿Está castrado?:</label>
-            <select type="text" required name="es_castrado">
+            <select type="text" class="form-select" required name="es_castrado">
                 <option selected value="no_se">No sé</option>   <!-- 'selected' hace que al cargar el formulario ya este elegida esta opcion-->
                 <option value="si">Si</option>
                 <option value="no">No</option>
             </select>
             <label>¿Tiene alguna condición médica que requiera medicación o cuidados especiales?:</label>
-            <select type="text" required name="cond_medica">
+            <select type="text" class="form-select" required name="cond_medica">
                 <option selected value="no_se">No sé</option>   <!-- 'selected' hace que al cargar el formulario ya este elegida esta opcion-->
                 <option value="si">Si</option>
                 <option value="no">No</option>
             </select>
             <label>Si tu respuesta fue sí, por favor dejanos una breve descripción:</label>
-            <textarea class="textarea" placeholder="" name="cond_medica_descripcion"></textarea>
+            <textarea class="form-control" placeholder="" name="cond_medica_descripcion"></textarea>
             <label>Foto de la mascota:</label>
-            <input type="file" required name="imagen"><br>
+            <input type="file" class="form-control" required name="imagen"><br>
             <h4>¡Ya falta poco!</h4>
             <h5>Por último, dejanos tus datos para que te podamos contactar:</h5>
             <label> Nombre: </label>
-            <input type="text" name="dueño_nombre" required placeholder="Nombre y apellido"> 
+            <input type="text" class="form-control" name="dueño_nombre" required placeholder="Nombre y apellido"> 
             <label> E-mail: </label>
-            <input type="email" name="mail" required placeholder="tumail@dominio.com">
+            <input type="email" class="form-control" name="mail" required placeholder="tumail@dominio.com">
             <label> Localidad / Barrio</label>
-            <input type="text" name="localidad" required placeholder="">
+            <input type="text" class="form-control" name="localidad" required placeholder="">
             <h6>Comentarios:</h6>
-            <textarea class="textarea" name="comentarios" placeholder="Acá podés dejarnos cualquier cometario que creas necesario..."></textarea>
+            <textarea class="textarea form-control" name="comentarios" placeholder="Acá podés dejarnos cualquier cometario que creas necesario..."></textarea>
             <br>
-            <input type="submit" id="button_enviar">
+            <input type="submit" class="btn w-100" id="button_enviar">
         </form>
         
+        </div>
     </main>
     
     <section>
