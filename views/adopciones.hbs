@@ -1,0 +1,15 @@
+    <div class="item">
+                <h2>Mascotas que esperan por vos</h2>
+                <table>
+                    {{#each mascotas}}
+                    <tr><td rowspan="5" style="width: 200px;"><img class="imagen" height="50px" alt="mascota" src="images/{{imagen}}"></td><td><strong>Nombre:</strong> {{nombre}}</td><td><strong>Tipo:</strong> {{tipo}}</td><td><strong>Edad:</strong> {{edad}} {{cantidad}}</td><td><a id=button_adoptar href="mailto:{{mail}}">Quiero Adoptar</a></td></tr>
+                    <tr><td><strong>Sexo:</strong> {{sexo}}</td><td><strong>Castrado:</strong> {{esCastrado}}</td><td><strong>¿Tiene antecedentes médicos?:</strong> {{condicion}}</td></tr>
+                    <tr><td colspan="3"><strong>Antecedentes medicos:</strong> {{condicionDescripcion}}</td></tr>
+                    <tr><td><strong>Dueño:</strong> {{duenio}}</td><td colspan="2"><strong>Localidad:</strong> {{localidad}}</td></tr>
+                    <tr><td colspan="3"><strong>Comentarios:</strong> {{comentarios}}</td></tr>
+                    {{/each}}
+                </table>
+    </div>
+    
+
+<a href="index.html" id="button_volver">Volver al Inicio</a>
